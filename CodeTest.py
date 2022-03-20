@@ -1,8 +1,9 @@
 import sys
+input = sys.stdin.readline
 
-def rec(cnt = 5):
-    if cnt >= 0:
-        print(cnt)
-        rec(cnt - 1)
+data = list(map(int, input().split()))
+data.sort()
 
-rec()
+for n in data:
+    print(n, end=' ')
+print()
